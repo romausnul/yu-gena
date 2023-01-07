@@ -1,0 +1,31 @@
+﻿<Window x:Class="WpfTextWindows.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfTextWindows"
+        mc:Ignorable="d"
+        Title="FigureWindow" Height="500" Width="600" Background="#000000FF" WindowStyle="None" AllowsTransparency="True" Topmost="True" MouseDown="Window_MouseDown" MouseMove="Window_MouseMove" MouseUp="Window_MouseUp">
+
+    <!--//====================================================
+        // Описание работы классов и методов исходника на:
+        // https://www.interestprograms.ru
+        // Исходные коды программ и игр
+        //==================================================== -->
+
+    <Grid>
+        <Label Name="label1" Visibility="Visible" Content="Hello World!" 
+               FontSize="70" FontFamily="Times New Roman" HorizontalAlignment="Center" 
+               VerticalAlignment="Center" FontWeight="Bold" Background="{x:Null}" >
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFF70707"/>
+                    <GradientStop Color="#FFF0F10D" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+            <Label.Effect>
+                <DropShadowEffect Color="#FFF9F3F3" BlurRadius="5" RenderingBias="Performance" ShadowDepth="2"/>
+            </Label.Effect>
+        </Label>
+    </Grid>
+</Window>
